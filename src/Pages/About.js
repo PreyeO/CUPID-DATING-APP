@@ -1,13 +1,18 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Button from '../Components/Button/Button'
 
 
 
 const About = () => {
 
- 
+  const navigate = useNavigate();
+
+  const navigateToSignup = () => {
+    
+    navigate('/signup');
+  };
   return (
     <>
     
@@ -20,7 +25,7 @@ const About = () => {
           <p className='mingle'>Lets get you to mingle...</p>
           <div className='btns'>
           <Button />
-          <Link to="/signup"><button>Get Started</button></Link>
+          <button onClick={navigateToSignup}>Get Started</button>
           </div>
       </div>
       </>

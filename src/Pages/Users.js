@@ -1,17 +1,24 @@
 import React from 'react'
 import Data from '../Components/Data/Data'
 import { AiOutlineClose } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
 
 const Users = () => {
+
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    
+    navigate('/');
+  };
   return (
     <>
     <div className='users'>
       <div className='buttons'>
-      <Link to="/"><button>
+      <button onClick={navigateToHome}>
         <AiOutlineClose/>
-      </button></Link>
+      </button>
       </div>
     <h4>Meet Our Elites</h4>
    <Data />

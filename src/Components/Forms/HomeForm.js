@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
 const HomeForm = () => {
-
-  
   const handleToast = (e) => {
     e.preventDefault();
-    toast.success("Sign-up successful!!. Time to meet our users");
+    toast.success("Sign-up successful!!.\n Time to meet our users");
+    setInterval(() => {
+      window.location = "/users";
+    },1000);
   };
 
   return (
