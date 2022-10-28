@@ -1,38 +1,500 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+header {
+  height: 80px;
+  color: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 20px;
+}
+
+nav {
+  transform: translateX(150px);
+}
+nav a {
+  margin: 2rem;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+nav a:hover {
+  color: red;
+}
+header .nav-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+.logo {
+  font-size: 25px;
+}
+.logo a {
+  color: red;
+  list-style: none;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+/* HOMEPAGE */
+.home-page {
+  background-image: url(./Assets/picsone.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.home-page h4 {
+  font-size: 20px;
+  color: white;
+  transform: translateY(90px) translateX(100px);
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.span-two {
+  color: goldenrod;
+}
+main {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-30px);
+}
+footer h5 {
+  color: white;
+  transform: translateY(135px);
+  word-spacing: 1px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page .footer-span {
+  color: goldenrod;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* FORM COMPONENT */
+
+.home-form {
+  max-width: 400px;
+  height: 400px;
+  border: 3px solid white;
+  padding-top: 20px;
+  transform: translateY(120px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-form form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+.large-inputs {
+  width: 120px;
+  border: 3px solid yellow;
+  height: 40px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.home-form p,
+.home-form h3,
+#privacy {
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.privacy-sec {
+  padding-top: 40px;
+  padding-left: 30px;
+}
+.home-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  border: transparent;
+  color: red;
+}
+.home-page button:hover {
+  background-color: goldenrod;
+  color: white;
+  transition: 1s;
+}
+
+.privacy-sec {
+  display: flex;
+  margin-top: 20px;
+}
+.privacy-sec #privacy {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.privacy-sec #privacy a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ABOUT PAGE */
+.about {
+  background-image: url(./Assets/picsseven.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  text-align: center;
+  overflow: hidden;
+  color: azure;
+  padding-top: 20px;
+}
+.about h3 {
+  font-size: 30px;
+  padding-top: 50px;
+  word-spacing: 1px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: navy;
+}
+.about h5 {
+  font-size: 30px;
+  font-weight: 200;
+  padding-top: 25px;
+  word-spacing: 1px;
+  font-weight: bold;
+}
+.span {
+  color: red;
+  font-size: 27px;
+  font-weight: 600;
+}
+.span-three {
+  color: brown;
+}
+.span-four {
+  color: orangered;
+  font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mingle {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+.about p {
+  font-size: 22px;
+  word-spacing: 1px;
+  padding-top: 40px;
+  font-weight: bold;
+  color: lightseagreen;
+}
+.about button {
+  width: 100px;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px;
+  padding: 10px;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  margin-top: 60px;
+  font-size: 15px;
+}
+.about button:hover {
+  background-color: navy;
+  color: white;
+  transition: 1s;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* DATA COMPONENT */
+
+.data-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  align-content: space-around;
+  gap: 20px;
+  padding-top: 20px;
+}
+.cards {
+  border: 2px solid white;
+  width: 300px;
+  padding-top: 10px;
+  color: azure;
+  word-spacing: 1px;
+  font-size: 15px;
+}
+
+/* USERS PAGE AND CUSTOM HOOK COMPONENT*/
+
+.users h4 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-align: center;
+  padding-top: 10px;
+  color: sandybrown;
+}
+.users {
+  background-image: url(./Assets/picsthree.png);
+  background-size: cover;
+  overflow: hidden;
+}
+.data-image img {
+  width: 100px;
+}
+
+.pagination-btns {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination-btns a {
+  padding: 10px;
+  background-color: white;
+  margin: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: goldenrod;
+  cursor: pointer;
+}
+.pagination-btns a:hover {
+  background-color: red;
+}
+.active-btn a {
+  background-color: red;
+}
+.disabled-btn a {
+  opacity: 0.6;
+}
+.disabled-btn a:hover {
+  cursor: not-allowed;
+  background-color: antiquewhite;
+}
+
+.buttons button {
+  padding: 5px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: white;
+  color: red;
+  transition: 1s;
+}
+
+/* ERROR PAGE */
+
+.error {
+  background-image: url(./Assets/picsfive.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 150px;
+}
+.error h1 {
+  font-size: 100px;
+}
+
+.error h4 {
+  font-size: 30px;
+  padding-top: 160px;
+}
+.error button {
+  width: 170px;
+  height: 50px;
+  background-color: black;
+  color: red;
+  border-radius: 5px;
+  border: 2px solid palevioletred;
+  padding: 10px;
+  margin-top: 100px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.error button:hover {
+  background-color: red;
+  color: white;
+  transition: 1s;
+}
+
+/* SIGN UP PAGE */
+
+.signup {
+  background-image: url(./Assets/picstwo.jpg);
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color: rgb(125, 4, 4);
+}
+.signup .buttn {
+  margin-left: -30px;
+  margin-top: 30px;
+}
+.signup .buttons button {
+  background-color: black;
+}
+
+.signup .buttons button:hover {
+  background-color: red;
+  color: white;
+  transition: 1s;
+}
+.signup .buttn button:hover {
+  background-color: red;
+  color: white;
+  transition: 1s;
+}
+
+/* CHANGE IN DESKTOP & MOBILE  VERSION */
+
+@media screen and (min-width: 650px) {
+  .home-form {
+    max-width: 600px;
+    height: 400px;
   }
-  to {
-    transform: rotate(360deg);
+  .pagination-btns a {
+    margin: 10px;
+  }
+
+  .home-page h4 {
+    font-size: 25px;
+    transform: translateY(90px) translateX(180px);
+  }
+  footer h5 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+  }
+  footer h5 {
+    padding-left: 20px;
+    text-align: left;
+    transform: translateY(200px);
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .home-page h4 {
+    transform: translateX(40px) translateY(90px);
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 900px) {
+  footer h5 {
+    transform: translateY(140px);
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  footer h5 {
+    transform: translateY(140px);
+  }
+}
+@media screen and (width: 1024px) {
+  footer h5 {
+    transform: translateY(80px);
+  }
+  main {
+    transform: translateY(-70px);
+  }
+  footer h5 {
+    transform: translateY(60px);
+  }
+  .home-page h4 {
+    transform: translateY(30px);
+  }
+}
+@media screen and (width: 540px) {
+  footer h5 {
+    transform: translateY(170px);
+  }
+}
+@media screen and (width: 360px) {
+  footer h5 {
+    transform: translateY(190px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateY(-100vh);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+  header nav a {
+    font-size: 25px;
+    background-color: navy;
+    letter-spacing: 1px;
+  }
+  nav a:active,
+  nav a:hover {
+    background-color: red;
+    color: white;
+  }
+
+  header .responsive-nav {
+    transform: none;
+  }
+  header #close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
   }
 }
