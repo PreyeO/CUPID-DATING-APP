@@ -4,9 +4,9 @@ import { ToastContainer, toast } from "react-toastify";
 
 const HomeForm = () => {
 
-
-  const handleToast = () => {
-    
+  
+  const handleToast = (e) => {
+    e.preventDefault();
     toast.success("Sign-up successful!!. Time to meet our users");
   };
 
