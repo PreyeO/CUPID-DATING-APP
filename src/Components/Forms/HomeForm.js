@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
 const HomeForm = () => {
-  const handleToast = (e) => {
-    e.preventDefault();
-    toast.success("Sign-up successful!!.\n Time to meet our users");
-    setInterval(() => {
-      window.location = "/users";
-    });
+
+
+  const handleToast = () => {
+    
+    toast.success("Sign-up successful!!. Time to meet our users");
   };
 
   return (
@@ -54,7 +53,6 @@ const HomeForm = () => {
             <Link to="*"> Privacy Policy</Link>.
           </label>
         </form>
-       
         <Link to="/users"><button onClick={handleToast}>Let's Get Started!</button></Link>
       </div>
     </div>
