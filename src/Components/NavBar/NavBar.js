@@ -22,8 +22,8 @@ const showNavBar = () => {
           <a href="/">Home</a>
           <a href='/about'>About</a>
           <a href='/users'>Users</a> 
-          <a href='/chatbox'>ChatBox</a>
-          <a href='/signup'>SignUp</a>
+          <a href='/chatbox'>Chat Box</a>
+          <a href='/signup'>Sign Up</a>
          
       <button onClick={showNavBar} className='nav-btn' id='close-btn'>
           <AiOutlineClose />

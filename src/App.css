@@ -482,6 +482,8 @@ footer h5 {
     font-size: 25px;
     background-color: navy;
     letter-spacing: 1px;
+    word-spacing: 1px;
+    padding: 10px;
   }
   nav a:active,
   nav a:hover {

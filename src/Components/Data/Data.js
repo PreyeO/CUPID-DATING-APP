@@ -44,19 +44,19 @@ const changePage =({selected}) =>{
             <img src={picture.medium} alt='' />
           </div>
           <div>
-          Name{ name.first} - {name.last} {" "}
+          Name: { name.first} - {name.last} {" "}
           </div>
           <div>
-             gender{gender}
+             gender: {gender}
          </div>
          <div>
           {dob.age}years
         </div>
         <div>
-         Email {email}
+         Email: {email}
         </div>
         <div>
-         Number {phone}
+         Number: {phone}
         </div>
         <div>
         location: {location.state} - {location.country} {" "}
