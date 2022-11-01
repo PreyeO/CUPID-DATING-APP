@@ -13,3 +13,6 @@ I was asked to build any website and implement these:
 5. Show client-side pagination which should include prev, next and navigation to individual pages.
 6. implement disabled states and API loading states.
 7. implemented accessibility.
+
+to view, this is the link below
+https://cupid-dating-app-pre.vercel.app/
